@@ -1,0 +1,47 @@
+#title{
+	font-size: 26px;
+	line-height: 75px;
+}
+
+#mainPage{
+	font-size:30px;
+}
+
+.memory-pics{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	row-gap:30px;
+	justify-items: center;
+}
+
+.menu-object{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 75px;
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 25px 9px;
+	display:grid;
+	grid-template-columns: 18rem 18rem 18rem;
+}
+
+p{
+	text-align: center;
+}
+
+button.menu-object:active{
+	font-size: 18px;
+	width: 275px;
+	height: 70px;
+}
+
+button.menu-object:hover:not(:active){
+	font-size: 22px;
+	font-style:italic;
+	background-color: rgb(160, 161, 115);
+	color: white;
+	width: 325px;
+	height: 85px;
+}
+
