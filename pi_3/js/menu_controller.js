@@ -1,5 +1,7 @@
 function start_game(){
 	name = prompt("Player name");
+	sessionStorage.setItem("username",name);
+	if(!sessionStorage.getItem("numCards")) sessionStorage.setItem("numCards",2);
 	loadpage("./html/game.html");
 }
 
@@ -12,7 +14,5 @@ function exit (){
 
 function options(){
 	// TODO: Open options menu
-	console.log("Options menu button");
+	loadpage("./html/options.html");
 }
-
-
