@@ -2,10 +2,20 @@
 	font-size: 26px;
 	line-height: 75px;
 	text-align: center;
+	grid-column: 2;
 }
 
 #mainPage{
 	font-size:30px;
+}
+
+#options_id{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+#center{
+	grid-column: 2;
 }
 
 input[type=number]{
@@ -15,14 +25,6 @@ input[type=number]{
 	width: 3rem;
 	text-align: center;
 }
-
-.memory-pics{
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-	row-gap:30px;
-	justify-items: right;
-}
-
 
 .menu-object{
 	margin-left: auto;
