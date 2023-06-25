@@ -12,9 +12,11 @@
 			<p id="title" class="menu-object">Is playing {{username}}</p>
 			<p v-if="score_text <= 0" id="center">You Lose</p>
 			<p v-else-if="num_cards <= 0" id="center">Great {{name}}, you WIN with: {{score_text}}/100 points!!</p>
+
 			<img v-else v-for="(card, indx) in current_card" :src="card.texture" v-on:click="clickCard(indx)">
 			<p v-if="bad_clicks < 100/pointsBC && num_cards > 0" id="center">Intents restants: {{ (100 - bad_clicks * pointsBC)/pointsBC }}</p>
 			<p  v-if="bad_clicks < 100/pointsBC && num_cards > 0" id="center">RestaPunts/Error: {{ pointsBC }}</p>
+			<p  v-if="bad_clicks < 100/pointsBC && num_cards > 0" id="center">nivell actual: {{ nivell_maxim }}</p>
 		</div>
 		<a id="title" class="menu-object" href="../index.html">GoToMenu</a>
 	</body>

@@ -1,6 +1,5 @@
 function start_game(){
-	name = prompt("Player name");
-	loadpage("./html/game.html");
+	loadpage("./mode1/index.html");
 }
 
 function exit (){
@@ -10,9 +9,7 @@ function exit (){
 	name = "";
 }
 
-function options(){
+function mode2(){
 	// TODO: Open options menu
-	console.log("Options menu button");
+	loadpage("./mode2/index.html");
 }
-
-

@@ -38,7 +38,7 @@ var options = function(){
                 sessionStorage.setItem("numCards",this.num);
                 sessionStorage.setItem("dificulty",this.dificulty);
                 save();
-                loadpage("../index.html")
+                loadpage("../")
             }
         }
     });
